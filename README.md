@@ -188,18 +188,18 @@ Let's build a simple app that let's us enter a dog breed and uses [The Dog API](
 
 ```html
 <header>
-  <input type="text" />
-  <button>Dog Me</button>
+  <input id="searchbar" type="text" />
+  <button id="btn">Fetch!/button>
 </header>
-<div></div>
+<div id ="imgContainer"></div>
 ```
 
 3. Cool! Now let's do some Javascript :). Create a `script.js` file and attach it to your HTML, `<script defer src='./script.js'></script>`. We'll start by assigning our `<button>`, `<input>`, and `<div>` elements to variables.
 
 ```js
-const button = document.querySelector('button')
-const breedInput = document.querySelector('input')
-const imageDiv = document.querySelector('div')
+const button = document.querySelector('#btn')
+const breedInput = document.querySelector('#searchbar')
+const imageDiv = document.querySelector('#imgContainer"')
 ```
 
 4. Next, let's add a click event listener to the button, with an anonymous arrow function:
@@ -238,9 +238,9 @@ imageDiv.innerHTML = `<img src=${dogPic}>`
 At the end, our JS should look something like this:
 
 ```js
-const button = document.querySelector('button')
-const breedInput = document.querySelector('input')
-const imageDiv = document.querySelector('div')
+const button = document.querySelector('#btn')
+const breedInput = document.querySelector('#searchBar')
+const imageDiv = document.querySelector('#imgContainer')
 
 //pulls all breeds and logs to the console
 const getBreeds = async () => {
