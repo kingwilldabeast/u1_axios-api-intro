@@ -191,7 +191,7 @@ Let's build a simple app that let's us enter a dog breed and uses [The Dog API](
   <input id="searchbar" type="text" />
   <button id="btn">Fetch!/button>
 </header>
-<div id ="imgContainer"></div>
+<img id ="imgContainer"></div>
 ```
 
 3. Cool! Now let's do some Javascript :). Create a `script.js` file and attach it to your HTML, `<script defer src='./script.js'></script>`. We'll start by assigning our `<button>`, `<input>`, and `<div>` elements to variables.
@@ -199,7 +199,7 @@ Let's build a simple app that let's us enter a dog breed and uses [The Dog API](
 ```js
 const button = document.querySelector('#btn')
 const breedInput = document.querySelector('#searchbar')
-const imageDiv = document.querySelector('#imgContainer"')
+const imageContainer = document.querySelector('#imgContainer"')
 ```
 
 4. Next, let's add a click event listener to the button, with an anonymous arrow function:
@@ -228,10 +228,10 @@ let response = await axios.get(
 let dogPic = response.data.message
 ```
 
-8. Finally, let's update the DOM with our new image link by changing the inner HTML of our image div:
+8. Finally, let's update the DOM with our new image link by setting the Src attribute of our image div to be the data we've pulled: 
 
 ```js
-imageDiv.innerHTML = `<img src=${dogPic}>`
+imageDiv.setAttribute ('src, `${dogpic}`)
 ```
 
 
@@ -260,7 +260,7 @@ button.addEventListener('click', async ()=> {
       //drilling our data response
       let dogPic = response.data.message
       //setting our DOM image
-      imageDiv.innerHTML = `<img src=${dogPic}>`
+      imageDiv.setAttribute ('src, `${dogpic}`)
 })
 ```
 
