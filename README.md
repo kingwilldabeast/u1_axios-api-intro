@@ -231,7 +231,7 @@ let dogPic = response.data.message
 8. Finally, let's update the DOM with our new image link by setting the Src attribute of our image div to be the data we've pulled: 
 
 ```js
-imageDiv.setAttribute ('src, `${dogpic}`)
+imageContainer.setAttribute ('src, `${dogpic}`)
 ```
 
 
@@ -260,7 +260,7 @@ button.addEventListener('click', async ()=> {
       //drilling our data response
       let dogPic = response.data.message
       //setting our DOM image
-      imageDiv.setAttribute ('src', `${dogpic}`)
+      imageContainer.setAttribute ('src', `${dogpic}`)
 })
 ```
 
