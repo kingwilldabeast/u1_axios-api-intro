@@ -191,7 +191,7 @@ Let's build a simple app that let's us enter a dog breed and uses [The Dog API](
   <input id="searchbar" type="text" />
   <button id="btn">Fetch!/button>
 </header>
-<img id ="imgContainer"></div>
+<img id ="imgContainer" />
 ```
 
 3. Cool! Now let's do some Javascript :). Create a `script.js` file and attach it to your HTML, `<script defer src='./script.js'></script>`. We'll start by assigning our `<button>`, `<input>`, and `<div>` elements to variables.
@@ -260,7 +260,7 @@ button.addEventListener('click', async ()=> {
       //drilling our data response
       let dogPic = response.data.message
       //setting our DOM image
-      imageContainer.setAttribute ('src', `${dogpic}`)
+      imageContainer.setAttribute ('src', dogpic)
 })
 ```
 
