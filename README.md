@@ -240,7 +240,7 @@ At the end, our JS should look something like this:
 ```js
 const button = document.querySelector('#btn')
 const breedInput = document.querySelector('#searchBar')
-const imageDiv = document.querySelector('#imgContainer')
+const imageContainer = document.querySelector('#imgContainer')
 
 //pulls all breeds and logs to the console
 const getBreeds = async () => {
