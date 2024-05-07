@@ -23,7 +23,7 @@ We use the word **"client"** to refer to a computer connected to the internet th
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png)
 
-A **"server"** is a computer who's primary purpose is just to store data. Humans don't normally interact with a server directly, so they have almost no interface. They often kind of ook like a VCR:
+A **"server"** is a computer who's primary purpose is just to store data. Humans don't normally interact with a server directly, so they have almost no interface. They often kind of look like a VCR:
 
 ![](https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRBQ6I4NzSHMvx7Wrdyy4BfY-HV1pY5Iji10WFRDs1AxPfvv8BgRoNPCDEM-pLNaRaIwlAr8LPzvS89M5xTKOY6g0aWKjRhNdsuy9zaZ99eWFLgffpM2Il-Zw&usqp=CAc).
 
